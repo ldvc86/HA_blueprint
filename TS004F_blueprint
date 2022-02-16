@@ -5,7 +5,7 @@ blueprint:
   input:
     tuya_ts004F:
       name: Tuya TS004F 4 button scene switch
-      description: Tuya TS0044 4 button scene switch to use
+      description: Tuya TS004F 4 button scene switch to use
       selector:
         device:
           integration: deconz
@@ -89,7 +89,7 @@ trigger:
 - platform: event
   event_type: deconz_event
   event_data:
-    device_id: !input 'tuya_ts0044'
+    device_id: !input 'tuya_ts004F'
 action:
 - variables:
     event: '{{ trigger.event.data.event }}'
