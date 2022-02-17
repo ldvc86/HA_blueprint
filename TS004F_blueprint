@@ -9,7 +9,7 @@ blueprint:
       selector:
         device:
           integration: deconz
-          manufacturer: _TZ3000_xabckq1v
+          model: {{TS0044 | TS004F}}
     button_one_long_press:
       name: Button 1 (long press)
       description: Action to run on button 1 (lower-left) long press
