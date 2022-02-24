@@ -9,7 +9,7 @@ blueprint:
       selector:
         device:
           integration: nanoleaf
-          model: [NL29,NL42,NL59]
+       #   model: [NL29,NL42,NL59]
     swipe_left:
       name: Swipe left
       description: 
