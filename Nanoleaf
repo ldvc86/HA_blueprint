@@ -44,7 +44,7 @@ trigger:
     device_id: !input 'Nano_device'
 action:
 - variables:
-    event: '{{ trigger.event.data.event }}'
+    event: '{{ trigger.event.data.type }}'
 - choose:
   - conditions:
     - '{{ event == swipe_left }}'
