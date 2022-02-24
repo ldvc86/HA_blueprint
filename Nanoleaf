@@ -1,9 +1,9 @@
 blueprint:
   name: Nanoleaf gestures
   description: |
-  Use gestures (swipes) on your Nanoleaf panels to control other devices. 
+    Use gestures (swipes) on your Nanoleaf panels to control other devices. 
   
-  Make sure that touch events are enabled for your Nanoleaf device. You can use the Nanoleaf app to enable or disable touch events, per device.
+    Make sure that touch events are enabled for your Nanoleaf device. You can use the Nanoleaf app to enable or disable touch events, per device.
   domain: automation
   input:
     Nano_device:
