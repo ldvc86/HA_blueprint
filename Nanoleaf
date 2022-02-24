@@ -1,18 +1,17 @@
 blueprint:
   name: Nanoleaf gestures
   description: |
-    Use gestures (swipes) on your Nanoleaf panels to control other devices. 
+    Use gestures (swipes) on your Nanoleaf panels to control other devices. Swipe gestures are supported on Canvas, Shapes and Elements devices; Light panels (Aurora) and Lines do not support touch gestures.
   
     Make sure that touch events are enabled for your Nanoleaf device. You can use the Nanoleaf app to enable or disable touch events, per device.
   domain: automation
   input:
     Nano_device:
       name: Nanoleaf
-      description: Nanoleaf Canvas, Shapes or Elements
+      description: Select Nanoleaf of type Canvas, Shapes or Elements
       selector:
         device:
           integration: nanoleaf
-          model: NL29|NL42|NL59
     swipe_left:
       name: Swipe left
       default: []
