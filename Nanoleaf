@@ -12,25 +12,21 @@ blueprint:
       #    model: '{{NL29|NL42|NL59}}'
     swipe_left:
       name: Swipe left
-      description: 
       default: []
       selector:
         action: {}
     swipe_right:
       name: Swipe right
-      description: 
       default: []
       selector:
         action: {}
     swipe_up:
       name: Swipe up
-      description: 
       default: []
       selector:
         action: {}
     swipe_down:
       name: Swipe down
-      description: 
       default: []
       selector:
         action: {}
