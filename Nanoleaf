@@ -32,7 +32,7 @@ blueprint:
         action: {}
     swipe_down:
       name: Swipe down
-      description: action(s) to perform on swipe ddown gesture
+      description: action(s) to perform on swipe down gesture
       default: []
       selector:
         action: {}
