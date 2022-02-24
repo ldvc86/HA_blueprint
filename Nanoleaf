@@ -9,24 +9,28 @@ blueprint:
       selector:
         device:
           integration: nanoleaf
-      #    model: '{{NL29|NL42|NL59}}'
+          model: '{{NL29|NL42|NL59}}'
     swipe_left:
       name: Swipe left
       default: []
+      description: action(s) to perform on swipe left gesture
       selector:
         action: {}
     swipe_right:
       name: Swipe right
+      description: action(s) to perform on swipe right gesture
       default: []
       selector:
         action: {}
     swipe_up:
       name: Swipe up
+      description: action(s) to perform on swipe up gesture
       default: []
       selector:
         action: {}
     swipe_down:
       name: Swipe down
+      description: action(s) to perform on swipe ddown gesture
       default: []
       selector:
         action: {}
