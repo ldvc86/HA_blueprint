@@ -49,14 +49,14 @@ action:
     event: '{{ trigger.event.data.type }}'
 - choose:
   - conditions:
-    - '{{ event == swipe_left }}'
+    - '{{ event == "swipe_left" }}'
     sequence: !input 'swipe_left'  
   - conditions:
-    - '{{ event == swipe_right }}'
+    - '{{ event == "swipe_right" }}'
     sequence: !input 'swipe_right'
   - conditions:
-    - '{{ event == swipe_up }}'
+    - '{{ event == "swipe_up" }}'
     sequence: !input 'swipe_up'
   - conditions:
-    - '{{ event == swipe_down }}'
+    - '{{ event == "swipe_down" }}'
     sequence: !input 'swipe_down'
