@@ -1,0 +1,60 @@
+blueprint:
+  name: Nanoleaf gestures
+  description: Use gestures (swipes) on your Nanoleaf panels to control other devices
+  domain: automation
+  input:
+    Nano_device:
+      name: Nanoleaf
+      description: Nanoleaf Canvas, Shapes or Elements
+      selector:
+        device:
+          integration: nanoleaf
+          model: [NL29,NL42,NL59]
+    swipe_left:
+      name: Swipe left
+      description: 
+      default: []
+      selector:
+        action: {}
+    swipe_right:
+      name: Swipe right
+      description: 
+      default: []
+      selector:
+        action: {}
+    swipe_up:
+      name: Swipe up
+      description: 
+      default: []
+      selector:
+        action: {}
+    swipe_down:
+      name: Swipe down
+      description: 
+      default: []
+      selector:
+        action: {}
+    
+mode: restart
+max_exceeded: silent
+trigger:
+- platform: event
+  event_type: nanoleaf_event
+  event_data:
+    device_id: !input 'Nano_device'
+action:
+- variables:
+    event: '{{ trigger.event.data.event }}'
+- choose:
+  - conditions:
+    - '{{ event == swipe_left }}'
+    sequence: !input 'swipe_left'  
+  - conditions:
+    - '{{ event == swipe_right }}'
+    sequence: !input 'swipe_right'
+  - conditions:
+    - '{{ event == swipe_up }}'
+    sequence: !input 'swipe_up'
+  - conditions:
+    - '{{ event == swipe_down }}'
+    sequence: !input 'swipe_down'
