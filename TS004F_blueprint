@@ -82,7 +82,7 @@ blueprint:
       default: []
       selector:
         action: {}  
-mode: restart
+mode: parallel
 max_exceeded: silent
 trigger:
 - platform: event
