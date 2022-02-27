@@ -15,73 +15,74 @@ blueprint:
       description: Action to run on button 1 (lower-left) long press
       default: []
       selector:
-        action: {}
+        action: null
     button_one_single_press:
       name: Button 1 (single press)
       description: Action to run on button 1 (lower-left) single press
       default: []
       selector:
-        action: {}
+        action: null
     button_one_double_press:
       name: Button 1 (double press)
       description: Action to run on button 1 (lower-left) double press
       default: []
       selector:
-        action: {}
+        action: null
     button_two_long_press:
       name: Button 2 (long press)
       description: Action to run on button 2 (upper-left) long press
       default: []
       selector:
-        action: {}
+        action: null
     button_two_single_press:
       name: Button 2 (single press)
       description: Action to run on button 2 (upper-left) single press
       default: []
       selector:
-        action: {}
+        action: null
     button_two_double_press:
       name: Button 2 (double press)
       description: Action to run on button 2 (upper-left) double press
       default: []
       selector:
-        action: {}
+        action: null
     button_three_long_press:
       name: Button 3 (long press)
       description: Action to run on button 3 (upper-right) long press
       default: []
       selector:
-        action: {}
+        action: null
     button_three_single_press:
       name: Button 3 (single press)
       description: Action to run on button 3 (upper-right) single press
       default: []
       selector:
-        action: {}
+        action: null
     button_three_double_press:
       name: Button 3 (double press)
       description: Action to run on button 3 (upper-right) double press
       default: []
       selector:
-        action: {}
+        action: null
     button_four_long_press:
       name: Button 4 (long press)
       description: Action to run on button 4 (lower-right) long press
       default: []
       selector:
-        action: {}
+        action: null
     button_four_single_press:
       name: Button 4 (single press)
       description: Action to run on button 4 (lower-right) single press
       default: []
       selector:
-        action: {}
+        action: null
     button_four_double_press:
       name: Button 4 (double press)
       description: Action to run on button 4 (lower-right) double press
       default: []
       selector:
-        action: {}  
+        action: null
+        
 mode: parallel
 max_exceeded: silent
 trigger:
